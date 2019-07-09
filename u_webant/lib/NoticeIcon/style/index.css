@@ -1,0 +1,24 @@
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
+.u_webant-notice-icon-popover {
+  width: 336px;
+}
+.u_webant-notice-icon-popover .ant-popover-inner-content {
+  padding: 0;
+}
+.u_webant-notice-icon-noticeButton {
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.3s;
+}
+.u_webant-notice-icon-icon {
+  padding: 4px;
+}
+.u_webant-notice-icon-tabs .ant-tabs-nav-scroll {
+  text-align: center;
+}
+.u_webant-notice-icon-tabs .ant-tabs-bar {
+  margin-bottom: 4px;
+}

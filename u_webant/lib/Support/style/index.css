@@ -1,0 +1,11 @@
+.u_webant-support-prefix .ant-select-arrow {
+  left: 11px;
+  right: auto;
+}
+.u_webant-support-prefix .ant-select-selection__rendered {
+  padding-left: 18px;
+}
+.u_webant-support-prefix .ant-select-selection__placeholder,
+.u_webant-support-prefix .ant-select-search__field__placeholder {
+  margin-left: 19px;
+}

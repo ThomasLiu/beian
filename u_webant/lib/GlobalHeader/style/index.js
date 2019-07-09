@@ -1,0 +1,9 @@
+require('antd/lib/avatar/style/index');
+require('antd/lib/tag/style/index');
+require('antd/lib/icon/style/index');
+require('../../NoticeIcon/style/index');
+require('../../HeaderSearch/style/index');
+require('../../HeaderDropdown/style/index');
+require('../../SelectLang/style/index');
+require('../../SiderMenu/style/index');
+require('./index.less');

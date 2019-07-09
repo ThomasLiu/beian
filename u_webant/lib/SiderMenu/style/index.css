@@ -1,0 +1,93 @@
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
+.u_webant-sider-menu-logo {
+  height: 64px;
+  position: relative;
+  line-height: 64px;
+  padding-left: (80px - 32px) / 2;
+  transition: all 0.3s;
+  background: white;
+  overflow: hidden;
+}
+.u_webant-sider-menu-logo img {
+  display: inline-block;
+  vertical-align: middle;
+  height: 32px;
+}
+.u_webant-sider-menu-logo h1 {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  margin: 0 0 0 12px;
+  font-family: Avenir, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.u_webant-sider-menu-sider {
+  min-height: 100vh;
+  box-shadow: 2px 0 6px rgba(0, 21, 41, 0.35);
+  position: relative;
+  z-index: 10;
+  background: white;
+  margin: -24px;
+}
+.u_webant-sider-menu-sider.u_webant-sider-menu-fixSiderBar {
+  box-shadow: 2px 0 8px 0 rgba(29, 35, 41, 0.05);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.u_webant-sider-menu-sider.u_webant-sider-menu-fixSiderBar .ant-menu-root {
+  overflow-y: auto;
+  height: calc(100vh - 64px);
+}
+.u_webant-sider-menu-sider.u_webant-sider-menu-light {
+  box-shadow: 2px 0 8px 0 rgba(29, 35, 41, 0.05);
+  background-color: white;
+}
+.u_webant-sider-menu-sider.u_webant-sider-menu-light .u_webant-sider-menu-logo {
+  background: white;
+  box-shadow: 1px 1px 0 0 #e8e8e8;
+}
+.u_webant-sider-menu-sider.u_webant-sider-menu-light
+  .u_webant-sider-menu-logo
+  h1 {
+  color: #1890ff;
+}
+.u_webant-sider-menu-sider.u_webant-sider-menu-light .ant-menu-light {
+  border-right-color: transparent;
+}
+.u_webant-sider-menu-icon {
+  width: 14px;
+  margin-right: 10px;
+}
+.top-nav-menu li.ant-menu-item {
+  height: 64px;
+  line-height: 64px;
+}
+.drawer .drawer-content {
+  background: white;
+}
+.ant-menu-inline-collapsed > .ant-menu-item .sider-menu-item-img + span,
+.ant-menu-inline-collapsed
+  > .ant-menu-item-group
+  > .ant-menu-item-group-list
+  > .ant-menu-item
+  .sider-menu-item-img
+  + span,
+.ant-menu-inline-collapsed
+  > .ant-menu-submenu
+  > .ant-menu-submenu-title
+  .sider-menu-item-img
+  + span {
+  max-width: 0;
+  display: inline-block;
+  opacity: 0;
+}
+.ant-menu-item .sider-menu-item-img + span,
+.ant-menu-submenu-title .sider-menu-item-img + span {
+  transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
+    width 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  opacity: 1;
+}

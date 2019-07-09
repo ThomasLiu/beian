@@ -1,0 +1,44 @@
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
+@media (max-width: 576px) {
+  .u_webant-cropper-main .ant-modal,
+  .u_webant-cropper-main .ant-modal-content {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+  }
+  .u_webant-cropper-main .ant-modal-content {
+    background: none;
+    box-shadow: none;
+  }
+  .u_webant-cropper-main .ant-modal-footer {
+    border-color: #666;
+    background-color: #444;
+    margin: 0;
+    padding-right: 0;
+    padding-left: 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+  .u_webant-cropper-main .ant-modal-footer .ant-btn,
+  .u_webant-cropper-main .ant-modal-footer .ant-btn-dashed {
+    background: none;
+    border: none;
+    color: #fff;
+    font-weight: 800;
+  }
+  .u_webant-cropper-main .ant-modal-body {
+    padding: 0;
+    height: 100%;
+    padding-bottom: 53px;
+  }
+}

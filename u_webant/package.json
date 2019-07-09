@@ -1,0 +1,110 @@
+{
+  "_args": [
+    [
+      "u_webant@1.2.10",
+      "/Users/thomaslau/Documents/project/u_hc_web"
+    ]
+  ],
+  "_from": "u_webant@1.2.10",
+  "_id": "u_webant@1.2.10",
+  "_inBundle": false,
+  "_integrity": "sha512-WmTx8+RVMGd44Jrjx57quPfvN9O7I0oa5W5iC+iSo8TXpbcAJ55v9cFMOxmbyMWcWxprwLGlzH9YsslTsSe40g==",
+  "_location": "/u_webant",
+  "_phantomChildren": {
+    "antd": "3.15.1",
+    "dva": "2.4.1",
+    "hash.js": "1.1.7",
+    "lodash": "4.17.11",
+    "qs": "6.6.0",
+    "util_storage": "0.0.1"
+  },
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "u_webant@1.2.10",
+    "name": "u_webant",
+    "escapedName": "u_webant",
+    "rawSpec": "1.2.10",
+    "saveSpec": null,
+    "fetchSpec": "1.2.10"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/u_webant/-/u_webant-1.2.10.tgz",
+  "_spec": "1.2.10",
+  "_where": "/Users/thomaslau/Documents/project/u_hc_web",
+  "bugs": {
+    "url": "https://github.com/ThomasLiu/u_webant/issues"
+  },
+  "dependencies": {
+    "@antv/data-set": "^0.10.0",
+    "@babel/runtime": "^7.1.5",
+    "classnames": "^2.2.6",
+    "enquire-js": "^0.2.1",
+    "hash.js": "^1.1.5",
+    "lodash": "^4.17.10",
+    "lodash-decorators": "^6.0.0",
+    "lrz": "^4.9.40",
+    "memoize-one": "^4.0.0",
+    "moment": "^2.22.2",
+    "path-to-regexp": "^2.4.0",
+    "prop-types": "^15.5.10",
+    "qs": "^6.6.0",
+    "rc-animate": "^2.4.4",
+    "react-container-query": "^0.11.0",
+    "react-copy-to-clipboard": "^5.0.1",
+    "react-cropper": "^1.0.1",
+    "react-document-meta": "^3.0.0-beta.2",
+    "react-favicon": "0.0.14",
+    "react-fittext": "^1.0.0",
+    "react-intl-universal": "^1.15.0",
+    "react-media": "^1.9.2",
+    "react-router-dom": "^4.3.1",
+    "react-transition-group": "^2.5.0",
+    "u_webant_base": "0.0.32",
+    "umi_base_config": "^0.0.4",
+    "util_react_request": "^0.0.4",
+    "util_react_web": "0.0.19",
+    "util_storage": "^0.0.1"
+  },
+  "description": "An enterprise-class UI design language and React-based implementation",
+  "devDependencies": {
+    "fs-extra": "^6.0.1",
+    "postcss-less-engine": "^0.6.2",
+    "webpack": "^3.3.0"
+  },
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "homepage": "https://github.com/ThomasLiu/u_webant#readme",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "u_webant",
+  "peerDependencies": {
+    "react": "~0.14.0 || >=15.0.0 || >=16.0.0",
+    "react-dom": "~0.14.0 || >=15.0.0 || >= 16.0.0",
+    "antd": "^3.0.1"
+  },
+  "prepublish": "npm run build",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThomasLiu/u_webant.git"
+  },
+  "scripts": {
+    "addAntlibtoStyle": "node ./tool/addAntlibtoStyle.js",
+    "build": "npm run create && npm run build:lib && npm run build:index && npm run build:umd && npm run rm && npm run processorLess && npm run addAntlibtoStyle",
+    "build:index": "../../node_modules/.bin/babel ./index.js -d lib && cp ./index.d.ts ./lib/index.d.ts",
+    "build:lib": "rm -rf lib && npm run cp && ../../node_modules/.bin/babel ../../scaffold/src/components -d lib --copy-files",
+    "build:umd": "npm run clean && ../../node_modules/.bin/cross-env NODE_ENV=production ../../node_modules/.bin/antd-tools run dist",
+    "clean": "rm -rf dist && rm ../../scaffold/.babelrc && rm ../../scaffold/css-module.js",
+    "cp": "cp ./.babelrc ../../scaffold && cp ./css-module.js ../../scaffold",
+    "create": "./tool/create.js",
+    "prepublish": "npm run build",
+    "processorLess": "node ./tool/processorLess.js",
+    "rm": "./tool/rm.js",
+    "test": "npm run create && npm run build:lib && npm run build:index && npm run build:umd && npm run rm && npm run processorLess"
+  },
+  "version": "1.2.10"
+}
