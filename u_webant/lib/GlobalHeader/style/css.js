@@ -1,9 +1,0 @@
-require('antd/lib/avatar/style/css');
-require('antd/lib/tag/style/css');
-require('antd/lib/icon/style/css');
-require('../../NoticeIcon/style/css');
-require('../../HeaderSearch/style/css');
-require('../../HeaderDropdown/style/css');
-require('../../SelectLang/style/css');
-require('../../SiderMenu/style/css');
-require('./index.css');
